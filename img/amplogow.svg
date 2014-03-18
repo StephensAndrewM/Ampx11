@@ -1,0 +1,6 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+<svg viewbox="0 0 1000 1000" width="1000" height="1000" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<path id="bolt" d="M 650 183 L 374 478 L 457 537 L 350 814 L 626 522 L 543 461 L 650 183" fill="#ffffff"  />
+	<circle cx="500" cy="500" r="437" stroke="#ffffff" stroke-width="40" fill="none"  />
+</svg>
