@@ -7,8 +7,8 @@ html {
 }
 
 body { 
-	/*background: url('../img/lightning-1920.jpg') #050505;*/
-	background: url(http://placekitten.com/1920/1080);
+	background: url('../img/lightning-1920.jpg') #050505;
+	/*background: url(http://placekitten.com/1920/1080);*/
 	background-size: cover;
 	background-position: center bottom;
 	font-family: 'Noto Sans', Arial;
@@ -31,7 +31,7 @@ a:link, a:visited {
 a:hover { color:#ffffff; }
 
 p, ul, h1, h2, h3, h4 {
-	margin:0.3em 0;
+	margin:0.8em 0;
 }
 
 .column2 {
@@ -127,10 +127,16 @@ Main Content Area
 ******************/
 
 .section-content {
-	background: rgba(0,0,0,0.8);
-	padding:50px;
-	min-height:400px;
+	background: rgba(0,0,0,0.7);
+	padding: 75px 50px;
 	color:white;
+	width: 1000px;
+	margin:0 auto;
+	transition: 0.2s all ease;
+}
+
+.section-content:hover {
+	background: rgba(0,0,0,0.8);
 }
 
 h1.mega-title {
@@ -138,7 +144,34 @@ h1.mega-title {
 	color:#c0c0c0;
 	text-align: center;
 	margin-bottom:40px;
+	margin-top:60px;
 	font-weight: normal;
+	text-shadow: 0 2px 3px black;
+}
+
+.buttonrow {
+	margin: 0 auto;
+	width: 384px;
+}
+
+/******************
+Page-Specific
+******************/
+
+#home p {
+	line-height: 32px;
+	color: #c0c0c0;
+	text-align: center;
+}
+
+#home .columnA {
+	width: 54%;
+	margin: 0 5%;
+}
+
+#home .columnB {
+	width: 32%;
+	text-align: center;
 }
 
 
