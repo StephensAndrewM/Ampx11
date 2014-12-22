@@ -7,8 +7,9 @@ html {
 }
 
 body { 
-	background: url('../img/lightning-1920.jpg') #050505;
+	/*background: url('../img/lightning-1920.jpg') #050505;*/
 	/*background: url(http://placekitten.com/1920/1080);*/
+	background: #101010;
 	background-size: cover;
 	background-position: center bottom;
 	background-attachment: fixed;
@@ -59,6 +60,7 @@ a.actionbutton, .normform input.submit {
 	transition: all 0.2s ease;
 	color:white;
 	line-height:1.3em;
+	float:left;
 }
 
 a.actionbutton:hover, .normform input.submit:hover {
@@ -175,6 +177,13 @@ h1.mega-title {
 .section-content p {
 	line-height: 32px;
 	color: #c0c0c0;
+}
+
+.circular-img {
+	height:214px;
+	width:214px;
+	border-radius:107px;
+	overflow: hidden;
 }
 
 /******************
@@ -327,4 +336,8 @@ from H5BP */
 
 @media only screen and (min-width:1200px) {
 	.wrapper { width:1200px; }
+}
+
+@media only screen and (min-width:768px) {
+	.wrapper { width:90%; }
 }
