@@ -7,8 +7,6 @@ html {
 }
 
 body { 
-	/*background: url('../img/lightning-1920.jpg') #050505;*/
-	/*background: url(http://placekitten.com/1920/1080);*/
 	background: #101010;
 	background-size: cover;
 	background-position: center bottom;
@@ -150,7 +148,7 @@ Main Content Area
 	background: rgba(0,0,0,0.7);
 	padding: 75px 50px;
 	color:white;
-	width: 1000px;
+	max-width: 1000px;
 	margin:0 auto;
 	transition: 0.2s all ease;
 }
@@ -171,7 +169,6 @@ h1.mega-title {
 
 .buttonrow {
 	margin: 0 auto;
-	width: 384px;
 }
 
 .section-content p {
@@ -184,6 +181,7 @@ h1.mega-title {
 	width:214px;
 	border-radius:107px;
 	overflow: hidden;
+	float:right;
 }
 
 /******************
@@ -191,16 +189,18 @@ Page-Specific
 ******************/
 
 #home .columnA {
-	width: 54%;
+	width: 52%;
 	margin: 0 5%;
 	text-align: center;
+	float:right;
 }
 
 #home .columnB {
-	width: 32%;
-	text-align: center;
+	width: 28%;
+	margin: 0 5%;
+	text-align: right;
+	float:right;
 }
-
 
 #about .columnA {
 	width: 54%;
@@ -212,109 +212,6 @@ Page-Specific
 	text-align: center;
 }
 
-/******************
-Contact Form
-******************/
-
-.normform {
-	
-}
-
-.normform label {
-	cursor:pointer;
-	display:block;
-	margin-bottom:2px;
-}
-
-.normform input, .normform textarea {
-	display:block;
-	width:90%;
-	font-family: 'Noto Sans', Arial;
-	padding:8px;
-	margin-bottom: 20px;
-	border:1px solid #414141;
-	border-radius:3px;
-	background: #2C2C2C;
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	-o-transition: all 0.3s ease;
-	transition: all  0.3s ease;
-	color:#a0a0a0;
-	font-size:0.8em;
-}
-
-.normform input:focus, .normform textarea:focus {
-	outline:0;
-	/*background: #002868;*/
-	border: 1px solid #2679FF;
-	color:#f0f0f0;
-}
-
-.normform textarea {
-	height:120px;
-}
-
-.normform input.formsecure {
-	display:none;
-}
-
-/*.normform input.submit {
-	cursor: pointer;
-	background: #00113C; /* Overridden * /
-	color:white;
-	padding:8px;
-	border:0;
-	border-radius:3px;
-	position:relative;
-	-webkit-transition: all 0.1s ease;
-	-moz-transition: all 0.1s ease;
-	-o-transition: all 0.1s ease;
-	transition: all  0.1s ease;
-	width:150px;
-}
-
-.normform input.submit:hover {
-	background: #2e3b5e; /* Overridden * /
-	top:-3px;
-}
-
-.normform input.submit:active {
-	top:3px;
-}*/
-
-.normform input.submit {
-	margin-left:0;
-	margin-right:0;
-}
-
-.form-error {
-	display:none;
-	clear:left;
-	padding:10px;
-	padding-left: 42px;
-	background: url(../img/warning.svg) no-repeat 5px center #fff4a8;
-	background-size: 28px;
-	margin-bottom:20px;
-	max-width:300px;
-	color:#202020;
-	border-radius:3px;
-}
-
-.form-success {
-	color:#202020;
-	border:1px solid #0f0;
-	clear:left;
-	padding:10px;
-	padding-left: 42px;
-	background: url(../img/accepted.svg) no-repeat 5px center #c1ffc1;
-	background-size: 28px;
-	margin-bottom:20px;
-	max-width:300px;
-}
-
-.normform .input-error {
-	border: 1px solid #C48C00;
-}
 
 
 /******************
@@ -340,4 +237,27 @@ from H5BP */
 
 @media only screen and (min-width:768px) {
 	.wrapper { width:90%; }
+}
+
+@media only screen and (max-width:480px) {
+	#pagetop h1 {
+		font-size:24px;
+	}
+}
+
+@media only screen and (max-width:768px) {
+	h1.mega-title {
+		font-size:30px;
+	}
+	.section-content {
+		padding: 20px 25px;
+	}
+	#home .columnA, #home .columnB {
+		float:none;
+		width:90%;
+	}
+	.circular-img {
+		float:none;
+		margin:20px auto;
+	}
 }
