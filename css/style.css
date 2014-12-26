@@ -48,7 +48,7 @@ a.actionbutton, .normform input.submit {
 	border:0;
 	width: 150px;
 	padding: 10px;
-	margin: 20px 10px;
+	margin: 5px 10px;
 	display: inline-block;
 	text-align: center;
 	font-size: 0.9em;
@@ -58,7 +58,6 @@ a.actionbutton, .normform input.submit {
 	transition: all 0.2s ease;
 	color:white;
 	line-height:1.3em;
-	float:left;
 }
 
 a.actionbutton:hover, .normform input.submit:hover {
@@ -202,16 +201,40 @@ Page-Specific
 	float:right;
 }
 
-#about .columnA {
-	width: 54%;
-	margin: 0 5%;
+.portfolio-thumb {
+	position: relative;
+	display: inline-block;
+	height:280px;
+	margin-right: 3px;
 }
 
-#about .columnB {
-	width: 32%;
+.portfolio-thumb img {
+	display: block;
+}
+
+.hover-block {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	right: 0;
+	display: table;
 	text-align: center;
+	opacity: 0;
+	transition: all 0.3s ease;
 }
 
+.portfolio-thumb:hover .hover-block {
+	opacity:1;
+}
+
+.hover-block-site-title {
+	display: table-cell;
+	vertical-align: middle;
+}
 
 
 /******************
@@ -248,6 +271,9 @@ from H5BP */
 @media only screen and (max-width:768px) {
 	h1.mega-title {
 		font-size:30px;
+	}
+	.primarynav {
+		display: none;
 	}
 	.section-content {
 		padding: 20px 25px;
